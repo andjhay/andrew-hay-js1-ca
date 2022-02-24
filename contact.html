@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="js/form.js" defer></script>
+  </head>
+  <body>
+    <h1>Contact us</h1>
+    <div class="outerLoader"><div class="loader"></div></div>
+    <div class="form">
+      <form class="contactForm">
+        <div class="validationPassed"><h3>Form submitted successfully!</h3></div>
+
+        <!-- required input -->
+        <div class="formElement">
+          <label for="name">Name (required)</label>
+          <input type="text" id="name" placeholder="Enter name" />
+          <div class="formError" id="nameError">Name is required</div>
+        </div>
+
+        <!-- min length 10 -->
+        <div class="formElement">
+          <label for="subject">Subject (minimum 10 characters)</label>
+          <input type="text" id="subject" placeholder="Write message" />
+          <div class="formError" id="subjectError">Minimum 10 characters required</div>
+        </div>
+
+        <!-- must look like email xxxx@xxxx.xxxx -->
+        <div class="formElement">
+          <label for="email">Email (required)</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <div class="formError" id="emailError">Please enter a valid email address</div>
+        </div>
+
+        <!-- min length 25 -->
+        <div class="formElement">
+          <label for="address">Address (required minimum 25 characters) </label>
+          <input type="text" id="address" placeholder="Enter address" />
+          <div class="formError" id="addressError">Address of 25 character length is required</div>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <h3><a href="index.html">Back</a></h3>
+  </body>
+</html>

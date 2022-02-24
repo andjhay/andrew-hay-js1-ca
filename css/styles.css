@@ -1,0 +1,96 @@
+/* New google chrome update auto changes css theme to chrome theme this zeroes it out for my machine at least */
+:root {
+  color-scheme: none !important;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Starjedi";
+  src: url(../fonts/Starjedi.ttf) format("truetype");
+}
+
+/* END FONTS */
+
+body {
+  display: grid;
+}
+
+h1,
+h2,
+label,
+h3 {
+  text-align: center;
+  font-family: "Starjedi";
+  letter-spacing: 3px;
+}
+
+.starships {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aStarship {
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: solid 3px black;
+  border-radius: 20px;
+  min-width: 40vw;
+}
+
+button {
+  margin: 20px auto;
+  padding: 10px 40px;
+  display: block;
+}
+
+input {
+  height: fit-content;
+  display: block;
+  width: 100%;
+}
+
+.form {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.formElement {
+  padding: 10px;
+}
+
+.formError {
+  display: none;
+  color: red;
+}
+
+.validationPassed {
+  display: none;
+  color: green;
+}
+
+.outerLoader,
+.detailsContainer {
+  margin: 0 auto;
+}
+
+.loader {
+  margin: auto;
+  border: 12px solid white;
+  border-top: 12px solid teal;
+  border-bottom: 12px solid teal;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
