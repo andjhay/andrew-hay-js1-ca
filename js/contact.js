@@ -1,16 +1,31 @@
-const form = document.querySelector(".contactForm");
-const htmlLoader = document.querySelector(".outerLoader");
-const passedValidation = document.querySelector(".validationPassed");
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const shipUrl = params.get("url");
+const backToShip = document.querySelector(".back-to-ship");
+
+const form = document.querySelector(".contact-form");
+const htmlLoader = document.querySelector(".outer-loader");
+const passedValidation = document.querySelector(".validation-passed");
 const nameValue = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
+const nameError = document.querySelector("#name-error");
 const subjectValue = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
+const subjectError = document.querySelector("#subject-error");
 const emailValue = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
+const emailError = document.querySelector("#email-error");
 const addressValue = document.querySelector("#address");
-const addressError = document.querySelector("#addressError");
+const addressError = document.querySelector("#address-error");
 
 htmlLoader.innerHTML = "";
+
+function returnToShipPage(link) {
+  if (link === null) {
+    backToShip.innerHTML = `<a href="index.html">Back</a>`;
+  } else {
+    backToShip.innerHTML = `<a href="details.html?url=${link}">Back</a>`;
+  }
+}
+
+returnToShipPage(shipUrl);
 
 function validateForm() {
   try {
@@ -19,7 +34,7 @@ function validateForm() {
     htmlLoader.innerHTML = `<div class="loader"></div>`;
 
     // Name check
-    if (checkLength(nmeValue.value, 0) === true) {
+    if (checkLength(nameValue.value, 0) === true) {
       nameError.style.display = "none";
     } else {
       nameError.style.display = "block";

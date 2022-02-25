@@ -1,7 +1,7 @@
 //  Googled star wars api found free api resource to use for the CA https://swapi.dev/api/
 
 const htmlStarships = document.querySelector(".starships");
-const htmlLoader = document.querySelector(".outerLoader");
+const htmlLoader = document.querySelector(".outer-loader");
 
 async function getStarships() {
   try {
@@ -28,7 +28,7 @@ async function getStarships() {
   function starshipsHtml(starships) {
     try {
       for (let i = 0; i < starships.length; i++) {
-        htmlStarships.innerHTML += `<div class="aStarship"> <h3> ${starships[i].name} </h3> <b>Manufacturer</b> - ${starships[i].manufacturer} <br>
+        htmlStarships.innerHTML += `<div class="single-starship"> <h3> ${starships[i].name} </h3> <b>Manufacturer</b> - ${starships[i].manufacturer} <br>
        <b>Class</b> - ${starships[i].starship_class} <br> <b>Passengers</b> - ${starships[i].passengers} 
        <a href="details.html?url=${starships[i].url}"><button>More Details</button></a> </div>`;
       }

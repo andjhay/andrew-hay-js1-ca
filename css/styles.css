@@ -1,4 +1,4 @@
-/* New google chrome update auto changes css theme to chrome theme this zeroes it out for my machine at least */
+/* seems a new google chrome update auto changes css based on chrome theme choices this zeroes it out for my browser at least */
 :root {
   color-scheme: none !important;
 }
@@ -30,7 +30,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
 }
 
-.aStarship {
+.single-starship {
   padding: 20px;
   margin: auto;
   margin-bottom: 10px;
@@ -56,29 +56,29 @@ input {
   width: fit-content;
 }
 
-.formElement {
+.form-element {
   padding: 10px;
 }
 
-.formError {
+.form-error {
   display: none;
   color: red;
 }
 
-.validationPassed {
+.validation-passed {
   display: none;
   color: green;
 }
 
-.outerLoader,
-.detailsContainer {
+.outer-loader,
+.details-container {
   margin: 0 auto;
 }
 
 .loader {
   margin: auto;
   border: 12px solid white;
-  border-top: 12px solid teal;
+  border-top: 12px solid rgb(66, 156, 156);
   border-bottom: 12px solid teal;
   border-radius: 50%;
   width: 20px;
