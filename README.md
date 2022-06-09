@@ -1,6 +1,6 @@
-# Semester 1 Cross Course Project - Noroff
+# API Test site - Noroff
 
-![crosscourseproject](https://user-images.githubusercontent.com/88853764/172799761-5db281a5-dc62-41c9-bea1-5210cdf4eb08.png)
+![starwars](https://user-images.githubusercontent.com/88853764/172803247-ecb22a4b-b1bb-4f39-b123-67131a9b098e.png)
 
 ## Description
 
@@ -34,5 +34,6 @@ npm install
 
 ## Contact
 
-[My LinkedIn page] (https://www.linkedin.com/in/andrewjameshay/)
-[My Github page] (https://github.com/andjhay)
+[My LinkedIn page] https://www.linkedin.com/in/andrewjameshay/
+
+[My Github page] https://github.com/andjhay
