@@ -10,7 +10,7 @@ async function getStarships() {
     for (let i = 1; i >= 0; i++) {
       const url = `https://swapi.dev/api/starships/?page=${i}`;
       const response = await fetch(url);
-      if (response.ok === true) {
+      if (response.ok == true) {
         const results = await response.json();
         const starships = results.results;
         htmlLoader.innerHTML = "";
